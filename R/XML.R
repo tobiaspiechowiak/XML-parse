@@ -21,7 +21,11 @@ for (i in 0:(length(f) - 2)){
 }
 
 
+
 #REAG
 REAG_65dB <- xmltop[['Session']][[7]][['Data']][['RecordedData']][['Measured']]
 
-#xmlValue(xml[[1]][[1]][[2]][[7]][[3]][[1]][[2]][[19]][[2]])
+for (i in 0:(length(f) - 2)){
+  tmp[i] <- as.numeric(xmlValue(REUG_65dB[[17 + i]][['Y']]))
+}
+
