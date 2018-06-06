@@ -108,12 +108,3 @@ write.table(REM,file='REM_data_1_person.txt',sep='\t')
 
 
 
-
-
-
-
-
-
-
-
-
