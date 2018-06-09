@@ -3,7 +3,7 @@ library('XML')
 library('dplyr')
 library('readr')
 library('plyr')
-library('xlsx')
+#library('xlsx')
 
 xmlfile <- xmlParse('../../test2.xml')
 
