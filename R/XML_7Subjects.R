@@ -7,7 +7,7 @@ library('plyr')
 
 xmlfile <- xmlParse('../../test2.xml')
 
-source('REM_XTRACT.R')
+source('REM_XTRACT_v2.R')
 
 nrSubjects <- 7
 
@@ -15,7 +15,7 @@ bla <- data.frame()
 
 for (index in seq(1,nrSubjects,1)) {
    print(index)
-   bla <- rbind(bla,REM_XTRACT(xmlfile,index))
+   bla <- rbind(bla,REM_XTRACT_v2(xmlfile,index))
 
 }
   
