@@ -1,9 +1,12 @@
 
+Sys.setenv(JAVA_HOME='c:/Program Files/Java/jre-9.0.1') # for 64-bit version
+
 library('XML')
 library('dplyr')
 library('readr')
 library('plyr')
-#library('xlsx')
+library('xlsx')
+
 
 xmlfile <- xmlParse('../../test2.xml')
 
@@ -19,7 +22,7 @@ for (index in seq(1,nrSubjects,1)) {
 
 }
   
-write.table(bla,'7-subject-REM.txt',sep=',')
+write.xlsx(bla,'7-subject-REM.xlsx')
 
 
 
